@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <noscript>
+        <style>
+            section { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+    <!-- Video Splash Screen -->
+    <div id="videoSplash" class="video-splash">
+        <div class="video-container">
+            <video id="introVideo" class="intro-video" autoplay muted playsinline preload="auto">
+                <source src="Parker.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- TEST BUTTON - Remove after testing -->
+            <button id="testTransition" style="position: absolute; top: 20px; right: 20px; padding: 10px 20px; background: red; color: white; border: none; cursor: pointer; z-index: 10001;">TEST TRANSITION</button>
+        </div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Main Content (hidden initially) -->
+    <div id="mainContent" class="main-content">
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="logo">PARKER</div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#moments" class="nav-link">Moments</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">HELLO, I'M</span>
+                <span class="title-main">PARKER</span>
+                <span class="title-subtitle">SOFTWARE DEVELOPER</span>
+            </h1>
+            <p class="hero-tagline">Driven by a love for AI and emerging tech, I'm an explorer of the new, fueled by positivity and great conversation.</p>
+            <div class="hero-cta">
+                <a href="#about" class="cta-button">Explore</a>
+            </div>
+        </div>
+        <div class="hero-3d-element">
+            <div class="floating-cube"></div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I like talking with different people, sharing life experience. 
+                        As a software developer, I'm passionate about creating innovative 
+                        solutions and exploring the cutting edge of technology. Every 
+                        interaction is an opportunity to learn, grow, and connect.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Curiosity</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Passion</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Learning</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Section -->
+    <section id="terminal" class="terminal-section">
+        <div class="section-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                    <div class="terminal-title">parker@dev:~$</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">parker@dev:~$</span>
+                        <span class="terminal-command">whoami</span>
+                    </div>
+                    <div class="terminal-output">Software Developer | AI Enthusiast | Tech Explorer</div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">parker@dev:~$</span>
+                        <span class="terminal-command">cat interests.txt</span>
+                    </div>
+                    <div class="terminal-output">AI & Machine Learning | Web Development | 3D Graphics | Open Source</div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">parker@dev:~$</span>
+                        <span class="terminal-command typing">echo "Building the future, one line at a time..."</span>
+                        <span class="cursor">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moments Section -->
+    <section id="moments" class="moments-section">
+        <div class="section-container">
+            <h2 class="section-title">Moments</h2>
+            <p class="section-subtitle">Projects and experiences that define my journey</p>
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-icon">🚀</div>
+                    <h3 class="moment-title">AI Innovation</h3>
+                    <p class="moment-description">
+                        Exploring the frontiers of artificial intelligence and machine learning, 
+                        building intelligent systems that push boundaries.
+                    </p>
+                    <a href="#" class="moment-link">View Project →</a>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-icon">💻</div>
+                    <h3 class="moment-title">Web Development</h3>
+                    <p class="moment-description">
+                        Crafting modern, responsive web experiences with cutting-edge technologies 
+                        and best practices.
+                    </p>
+                    <a href="#" class="moment-link">View Code →</a>
+                </div>
+                <div class="moment-card">
+                    <div class="moment-icon">🌐</div>
+                    <h3 class="moment-title">Open Source</h3>
+                    <p class="moment-description">
+                        Contributing to the open source community, sharing knowledge and 
+                        collaborating on innovative projects.
+                    </p>
+                    <a href="#" class="moment-link">View Repository →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and share experiences</p>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="email-display">
+                        <span class="email-label">Email:</span>
+                        <a href="mailto:parker@example.com" class="email-address">parker@example.com</a>
+                    </div>
+                    <div class="contact-note">
+                        <p>Feel free to reach out! I'm always open to interesting conversations, 
+                        collaborations, and sharing experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Parker. Built with passion and curiosity.</p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
