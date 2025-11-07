@@ -101,17 +101,6 @@ function initVideoSplash() {
     }, 2000);
 }
 
-// TEST BUTTON - Remove after testing
-document.addEventListener('DOMContentLoaded', () => {
-    const testBtn = document.getElementById('testTransition');
-    if (testBtn) {
-        testBtn.addEventListener('click', () => {
-            console.log('TEST BUTTON CLICKED - Forcing transition');
-            showMainContent();
-        });
-    }
-});
-
 // Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded, initializing video...');
