@@ -909,3 +909,14 @@ section:not(.hero-section):not(.visible) {
     }
 }
 
+/* ============================================
+   ELEVENLABS CONVAI WIDGET
+   ============================================ */
+
+elevenlabs-convai {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
